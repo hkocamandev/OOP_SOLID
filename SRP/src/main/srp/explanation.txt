@@ -1,0 +1,5 @@
+SRP stands for Single Responsibility Principle in SOLID Principles.
+Every class or module has to have one reason to change or it should serve only for one general purpose.
+In this module: UserController class was responsible for both validating users and storing users at first.
+We changed it and separated the roles of validations and storing into other classes (UserValidator and UserPersistenceService).
+We sent user information into these newly created classes, thus each of them being responsible of their own goals.
